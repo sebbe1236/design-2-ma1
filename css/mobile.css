@@ -1,0 +1,21 @@
+@media (max-width: 900px) {
+  .maincontent_container,
+  .header_container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .header_container img {
+    padding: 30px;
+    width: 100%;
+    align-self: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-inbetween;
+  }
+  nav li {
+    font-size: 1.5em;
+  }
+}

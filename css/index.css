@@ -1,6 +1,11 @@
+html {
+  height: 100vh;
+}
 body {
   display: grid;
   min-height: 100vh;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
 }
 
 * {
@@ -9,9 +14,93 @@ body {
   padding: 0;
 }
 
-footer {
-  background-color: brown;
-  margin-bottom: 0;
-  width: 100%;
+/*.backgroundimage_container {
+  background-image: url("/images/background-image.jpg");
+  background-repeat: no-repeat;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+header {
   display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+.header_container img {
+  width: 100%;
+  padding: 15px;
+}
+
+.maincontent_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(250px, auto);
+  margin: 20px;
+  grid-gap: 20px;
+  padding: 10px;
+}
+.maincontent_container img {
+  width: 100%;
+  border-radius: 10px;
+}
+.maincontent_container h2,
+p {
+  color: white;
+}
+.footer_container h3,
+p {
+  padding: 10px;
+}
+
+.footer_container {
+  background-color: #581845;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+
+  width: 100%;
+  bottom: 0px;
+}
+
+main {
+  background-image: url("/images/green-texturebackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.maincontent_container p {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #99cc99;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+
+nav li {
+  font-size: 2em;
+  color: purple;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  padding: 20px;
 }
