@@ -11,11 +11,32 @@
     align-self: center;
   }
 
-  nav ul {
-    display: flex;
-    justify-content: space-inbetween;
+  nav {
+    display: none;
   }
   nav li {
     font-size: 1.5em;
+  }
+  .hamburger-icon {
+    color: black;
+    padding: 10px;
+    font-size: 1.5em;
+    display: block;
+  }
+  #hamburger-menu:checked ~ nav {
+    display: inline-block;
+    width: 100%;
+  }
+  .icon {
+    display: flex;
+  }
+  .featuredimage {
+    width: 100%;
+    padding: 25px;
+  }
+  .featuredproducts_container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
   }
 }

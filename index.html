@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
 
     <title>Design 1 module assignment</title>
 
@@ -15,15 +18,22 @@
   </head>
   <body>
     <header class="header_container">
-      <img src="images/brand_logo2.jpg" alt="Brand logo" />
-
-      <nav>
+      <div>
+        <img class="brand_logo" src="images/brand_logo2.jpg" alt="Brand logo" />
+      </div>
+      <label class="hamburger-icon" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav class="desktop-nav mobile-nav">
         <ul>
-          <li>Home</li>
-          <li>About</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
           <li>Contact</li>
         </ul>
       </nav>
+      <div class="icon">
+        <p>Cart:</p>
+        <img src="icons/Asset 4.png" />
+      </div>
     </header>
     <main>
       <h1>Lorem ipsum dolor</h1>
